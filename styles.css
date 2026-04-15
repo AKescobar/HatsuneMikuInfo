@@ -47,10 +47,10 @@ table {
 	border-spacing: 0;
 }
 :root{
-    --hero-image: ;
-    --dkgray: ;
-    --miku: ;
-    --magenta: ;
-    --light: ;
-    --box-shadow: ;
+    --hero-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero");
+    --dkgray: #393d43;
+    --miku: #1acad1;
+    --magenta: #c3376f;
+    --light: #dddfde;
+    --box-shadow: 2px 4px 6px var(--magenta);
 }
