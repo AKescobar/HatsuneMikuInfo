@@ -46,11 +46,146 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*===== Theme =====*/
 :root{
-    --hero-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero");
+    --hero-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-3.gif");
     --dkgray: #393d43;
     --miku: #1acad1;
     --magenta: #c3376f;
     --light: #dddfde;
     --box-shadow: 2px 4px 6px var(--magenta);
 }
+
+/*===== Universal Styles =====*/
+html{ /*Background pattern*/
+	background-color: #a9b2bf;
+	background-size: 26px 26px;
+	background-image:  repeating-linear-gradient(to right, #737d87, #737d87 1.3px, #a9b2bf 1.3px, #a9b2bf);
+}
+body{
+	background-color: var(--dkgray);
+	width: 85%;
+	margin: 0 auto;
+}
+
+/*===== Text Styles =====*/
+h1{
+	font-family: 'Proza Libre', serif;
+	font-weight: 600;
+	font-size: 2.25em;
+	padding: 25px;
+	text-align: center;
+	color: var(--miku);
+}
+h2, h3{
+	font-family: 'Trirong', serif;
+	font-style: oblique;
+	color: var(--light);
+	padding: 15px;
+	font-weight: 500;
+}
+h2{
+	font-size: 1.75em;
+}
+h3{
+	font-size: 1.25em;
+}
+p, li ,a, label, small{
+	font-family: 'Noto Sans', sans-serif;
+	color: var(--light);
+	padding: 10px;
+}
+p, a, label{
+	font-size: 20px;
+	line-height: 25px;
+}
+a{
+	text-decoration: none;
+	padding: 10px;
+}
+span{
+	font-family: 'Noto Sans', sans-serif;
+	color: var(--miku);
+	font-size: 16px;
+	padding: 10px;
+}
+.skip-link{
+	position: absolute;
+	left: -9999px;
+	top: 0;
+}
+
+/*===== Hero Image =====*/
+#hero-image{
+	background-image: var(--hero-image);
+	background-size: 75%;
+    background-position: top;
+}
+header{
+	padding: 6em;
+}
+/*===== Nav Styles =====*/
+ul{
+	position: relative;
+	bottom: 85px;
+    right: 90px;
+	display: flex; 
+	gap: 10px;
+	list-style-type: none;
+}
+nav a{
+	background-color: rgba(221, 223, 222, .5);
+	color: var(--dkgray);
+	padding: 4px;
+	border-radius: 10px;
+}
+nav a:hover{
+	background-color: rgba(26, 202, 209, .5);
+	color: var(--light);
+}
+
+/*===== Songs =====*/
+#songs{
+	background-color: var(--light);
+}
+#songs h2, #songs h3, #songs p{
+	color: var(--dkgray);
+}
+
+/*===== Softwares =====*/
+
+/*===== Newsletter =====*/
+#newsletter{
+	background-color: var(--light);
+}
+#newsletter h2, label{
+	color: var(--dkgray);
+}
+form{
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	padding: 10px;
+	margin: 0 auto;
+}
+input{
+	line-height: 30px;
+	margin: 10px;
+	border-radius: 8px;
+}
+select{
+	height: 40px;
+	margin: 10px;
+	border-radius: 8px;
+}
+input[type= "submit"]{
+	width: 60%;
+    margin: 15px auto;
+	border-radius: 8px;
+	background-color: var(--dkgray);
+	color: var(--miku);
+}
+/*===== FAQ =====*/
+
+/*===== Footer =====*/

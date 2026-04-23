@@ -5,7 +5,8 @@
         <!--Meta-->
         <meta name="author" content="Ana Escobar"/>
         <meta name="description" content="A catalogue of the different Hatsune Miku voice synthesizer softwares"/>
-
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        
         <title>The Hatsune Miku Menu</title>
 
         <!--Favicon-->
@@ -22,15 +23,21 @@
     </head>
     <body>
         <header id="hero-image">
-            <h1>The Hatsune Miku Catalogue</h1>
+            <!--Skip to main-->
+            <a href="#main" class="skip-link">Skip to main content</a>
+
+            <!----Navigation---->
             <nav>
                 <ul>
                     <li><a href="#songs">Songs</a></li>
                     <li><a href="#software">Softwares</a></li>
                     <li><a href="#newsletter">Newsletter</a></li>
                     <li><a href="#faq">FAQ</a></li>
-                </ul>
+                    </ul>
             </nav>
+
+            <h1>The Hatsune Miku Catalogue</h1>
+
         </header>
         <main>
             <!----Song Previews---->
@@ -39,7 +46,7 @@
                 <div id="slideshow">
                 <div>
                     <h3>Ghost Rule by Deco*27</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KushW6zvazM?si=bm8A4ad5eCZ-ysYf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KushW6zvazM?si=za9Lki1qS8Z0uKNp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p>Software Used: Hatsune Miku V4X</p>
                 </div>
 
@@ -77,12 +84,14 @@
 
             <!----Software Versions---->
             <section id="software">
-                Reference Mod 2
+                <h2>Software Versions</h2>
+                <!----Section will be completed with JavaScript---->
             </section>
 
-            <!----Newsletter Form---->
+            <!----Newsletter---->
             <section id="newsletter">
                 <h2>Sign up for our Newsletter!</h2>
+                <!----Newsletter Form---->
                 <form>
                     <label>Name</label>
                     <input type="text" name="my-name" id="my-name" required>
@@ -110,24 +119,28 @@
             <!----Frequently Asked Questions---->
             <section id="faq">
                 <h2>Frequently Asked Questions</h2>
-                <h3>Question 1</h3>
+
+                <!----Tabs---->
+                <h3>Who is Hatsune Miku?</h3>
                 <div>
-                    Answer
+                    <p>Hatsune Miku, codename CV01, was the first Japanese VOCALOID to be both developed and distributed by Crypton Future Media, Inc. Her voice is provided by the Japanese voice actress Saki Fujita.</p>
                 </div>
 
-                <h3>Question 2</h3>
+                <h3>What is VOCALOID?</h3>
                 <div>
-                    Answer
+                    <p>Vocaloid is a singing synthesizer application software developed by the YAMAHA Corporation.he project was an international effort, and is considered the brainchild of Kenmochi Hideki, also known as the "father" of VOCALOID.</p> 
                 </div>
 
-                <h3>Question 3</h3>
+                <h3>Where can I find this software?</h3>
                 <div>
-                    Answer
+                    <p>You can find this software on the official <a href="https://www.vocaloid.com/en/">VOCALOID website</a></p>
+                    <p>You can also find copies of the software on secondhand on websites like e-bay.</p>
                 </div>
 
-                <h3>Question 4</h3>
+                <h3>How do I use this software?</h3>
                 <div>
-                    Answer
+                    <p>The YAMAHA Corporation has made a series of videos that show how to use the software.</p>
+                    <p>The videos can be found <a href="https://www.vocaloid.com/en/creator-cat/003/">here</a>.</p>
                 </div>
             </section>
         </main>
