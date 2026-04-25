@@ -74,7 +74,9 @@ h1{
 	font-family: 'Proza Libre', serif;
 	font-weight: 600;
 	font-size: 2.25em;
-	padding: 25px;
+	position: relative;
+    top: 50px;
+    padding: 50px 25px 15px;
 	text-align: center;
 	color: var(--miku);
 }
@@ -152,7 +154,9 @@ nav a:hover{
 #songs h2, #songs h3, #songs p{
 	color: var(--dkgray);
 }
-
+#slideshow{
+	padding: 1em;
+}
 /*===== Softwares =====*/
 
 /*===== Newsletter =====*/
@@ -170,14 +174,16 @@ form{
 	margin: 0 auto;
 }
 input{
-	line-height: 30px;
+	line-height: 40px;
 	margin: 10px;
 	border-radius: 8px;
+	border: 2px var(--miku) solid;
 }
 select{
-	height: 40px;
+	height: 50px;
 	margin: 10px;
 	border-radius: 8px;
+	border: 2px var(--miku) solid;
 }
 input[type= "submit"]{
 	width: 60%;
@@ -185,7 +191,18 @@ input[type= "submit"]{
 	border-radius: 8px;
 	background-color: var(--dkgray);
 	color: var(--miku);
+	border: 2px var(--miku) solid;
 }
 /*===== FAQ =====*/
 
 /*===== Footer =====*/
+footer{
+	background-color: var(--light);
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding: 1.5rem;
+}
+small{
+	color: var(--dkgray);
+}

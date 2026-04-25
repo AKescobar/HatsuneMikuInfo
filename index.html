@@ -15,6 +15,11 @@
         <!--JS/CSS-->
         <link rel="stylesheet" href="styles.css">
         <script src="index.js" defer></script>
+        <script src="jquery.js"></script>
+        <link href="jquery-ui.css" rel="stylesheet">
+        <script src="cycle2.js"></script>
+        <script src="cycle2.youtube.js"></script>
+        <script src="cycle2.caption2.js"></script>
 
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,42 +48,48 @@
             <!----Song Previews---->
             <section id="songs">
                 <h2>Example Songs</h2>
-                <div id="slideshow">
-                <div>
+                <div id="slideshow" data-cycle-fx="scrollHorz" data-cycle-speed="200" data-cycle-timeout="3000" data-cycle-youtube=true data-cycle-youtube-autostart=false>
+                    
+                    <div>
                     <h3>Ghost Rule by Deco*27</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/KushW6zvazM?si=za9Lki1qS8Z0uKNp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p>Software Used: Hatsune Miku V4X</p>
-                </div>
+                    </div>
 
-                <div>
+                    <div>
                     <h3>M@GICAL☆CURE! LOVE ♥ SHOT! by SAWTOWNE</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/LaEgpNBt-bQ?si=zwWsBKs0yKSk7gHp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p>Software Used: Hatsune Miku V4 English</p>
-                </div>
+                    </div>
 
-                <div>
+                    <div>
                     <h3>Unknown Mother Goose by Wowaka</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/P_CSdxSGfaA?si=MGGo6pB3MUNfWZVV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p>Software Used: Hatsune Miku V4X</p>
-                </div>
+                    </div>
 
-                <div>
+                    <div>
                     <h3>The Name of the Sin by Ryo</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/kWJ4z-I25LU?si=dgnnOEZuGfFkysi5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p>Software Used: Hatsune Miku V3</p>
-                </div>
+                    </div>
 
-                <div>
+                    <div>
                     <h3>Melt by Ryo</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/4u7FTSfCcmg?si=ztcHvuJNmgg8qd60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p>Software Used: Hatsune Miku V2</p>
-                </div>
+                    </div>
 
-                <div>
+                    <div>
                     <h3>Rookie by Deco*27</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/owv06htaoI8?si=RcdBecRALh9kQ6aD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p>Software Used: Hatsune Miku V6</p>
+                    </div>
                 </div>
+
+                <div id="slideshow-buttons">
+                    <button id="previous-btn">Previous</button>
+                    <button id="next-btn">Next</button>
                 </div>
             </section>
 
@@ -120,7 +131,7 @@
             <section id="faq">
                 <h2>Frequently Asked Questions</h2>
 
-                <!----Tabs---->
+                <!----Accordion---->
                 <h3>Who is Hatsune Miku?</h3>
                 <div>
                     <p>Hatsune Miku, codename CV01, was the first Japanese VOCALOID to be both developed and distributed by Crypton Future Media, Inc. Her voice is provided by the Japanese voice actress Saki Fujita.</p>
