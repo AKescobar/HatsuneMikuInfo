@@ -84,7 +84,7 @@ h2, h3{
 	font-family: 'Trirong', serif;
 	font-style: oblique;
 	color: var(--light);
-	padding: 15px;
+	padding: 30px;
 	font-weight: 500;
 }
 h2{
@@ -159,8 +159,13 @@ nav a:hover{
 #songs h2, #songs h3, #songs p{
 	color: var(--dkgray);
 }
-#slideshow{
+.cycle-slideshow{
 	padding: 1em;
+	margin: 0 auto;
+}
+#slideshow-buttons{
+	display: flex;
+	justify-content: center;
 }
 button{
 	padding: 15px 20px;
@@ -171,6 +176,9 @@ button{
 	border: 2px var(--miku) solid;
 	box-shadow: var(--box-shadow);
 	border-radius: 4px;
+}
+#next-btn{
+	width: 140px;
 }
 /*===== Softwares =====*/
 #software{
@@ -212,6 +220,7 @@ input[type= "submit"]{
 	background-color: var(--dkgray);
 	color: var(--miku);
 	border: 2px var(--miku) solid;
+	box-shadow: var(--box-shadow);
 }
 .errorInput{
 	border: 2px var(--magenta) solid;
@@ -231,6 +240,12 @@ input[type= "submit"]{
 /*===== FAQ =====*/
 #faq{
 	padding: 1.5em 2.5em;
+}
+#accordion p{
+	color: var(--dkgray);
+}
+#accordion a{
+	color: var(--magenta);
 }
 /*===== Footer =====*/
 footer{

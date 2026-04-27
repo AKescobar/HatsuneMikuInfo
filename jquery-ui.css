@@ -176,14 +176,17 @@
 	display: block;
 	cursor: pointer;
 	position: relative;
-	margin: 2px 0 0 0;
-	padding: .5em .5em .5em .7em;
+	margin: 0 auto;
+	padding: 1em;
 	font-size: 100%;
+	width: 80%;
 }
 .ui-accordion .ui-accordion-content {
-	padding: 1em 2.2em;
+	padding: 1em;
 	border-top: 0;
 	overflow: auto;
+	margin: 0 auto;
+	width: 80%;
 }
 
 /* Component containers

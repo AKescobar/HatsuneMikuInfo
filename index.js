@@ -25,7 +25,7 @@ function getSoftware(){
    let endpoint = `${myEndpoint}`;
    let xhr = new XMLHttpRequest();
 
-   xhr.addEventListener("load", function(data){
+   xhr.addEventListener("load", function(){
       if(this.status === 200){
 			displaySoftware(this.response);
 		}
@@ -64,6 +64,7 @@ function displaySoftware(data){
 window.onload = function(){
 	 getSoftware();
 };
+
 /*Form Validation*/
 function newsletterForm(e){
    e.preventDefault();
@@ -142,4 +143,10 @@ function displayUser(){
    outputP.innerHTML = output;
 }
 document.getElementById("my-submit").addEventListener("click", newsletterForm);
+
 /*Accordion*/
+ $(function(){
+   $("#accordion").accordion({
+      collapsible: true
+   });
+  });
