@@ -88,6 +88,7 @@ h2, h3{
 	font-weight: 500;
 }
 h2{
+	text-align: center;
 	font-size: 1.75em;
 }
 h3{
@@ -111,6 +112,9 @@ span{
 	color: var(--miku);
 	font-size: 16px;
 	padding: 10px;
+}
+label{
+	color: var(--dkgray);
 }
 .skip-link{
 	position: absolute;
@@ -150,6 +154,7 @@ nav a:hover{
 /*===== Songs =====*/
 #songs{
 	background-color: var(--light);
+	padding: 1.5em 2.5em;
 }
 #songs h2, #songs h3, #songs p{
 	color: var(--dkgray);
@@ -157,11 +162,24 @@ nav a:hover{
 #slideshow{
 	padding: 1em;
 }
+button{
+	padding: 15px 20px;
+	font-size: 25px;
+	margin: 20px;
+	color: var(--miku);
+	background-color: var(--light);
+	border: 2px var(--miku) solid;
+	box-shadow: var(--box-shadow);
+	border-radius: 4px;
+}
 /*===== Softwares =====*/
-
+#software{
+	padding: 1.5em 2.5em;
+}
 /*===== Newsletter =====*/
 #newsletter{
 	background-color: var(--light);
+	padding: 1.5em 2.5em;
 }
 #newsletter h2, label{
 	color: var(--dkgray);
@@ -187,14 +205,33 @@ select{
 }
 input[type= "submit"]{
 	width: 60%;
-    margin: 15px auto;
+	height: 75px;
+    font-size: 25px;
+    margin: 55px auto;
 	border-radius: 8px;
 	background-color: var(--dkgray);
 	color: var(--miku);
 	border: 2px var(--miku) solid;
 }
+.errorInput{
+	border: 2px var(--magenta) solid;
+}
+.error{
+	display: block;
+}
+.message{
+	color: var(--miku);
+}
+#displayUser{
+	color: var(--dkgray);
+    font-size: 2em;
+    padding: 1.25em;
+    text-align: center;
+}
 /*===== FAQ =====*/
-
+#faq{
+	padding: 1.5em 2.5em;
+}
 /*===== Footer =====*/
 footer{
 	background-color: var(--light);

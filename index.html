@@ -16,7 +16,6 @@
         <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
         <link href="jquery-ui.css" rel="stylesheet">
         <script src="https://malsup.github.io/jquery.cycle2.js"></script>
-        <script src="jquery.cycle2.youtube.js"></script>
 
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +44,7 @@
             <!----Song Previews---->
             <section id="songs">
                 <h2>Example Songs</h2>
-                <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-speed="200" data-cycle-timeout="3000" data-cycle-slides="div">
+                <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-speed="3000" data-cycle-timeout="10000" data-cycle-slides="div">
 
                     <div>
                     <h3>Ghost Rule by Deco*27</h3>
@@ -94,7 +93,9 @@
             <!----Software Versions---->
             <section id="software">
                 <h2>Software Versions</h2>
+                <div>
                 <!----Section will be completed with JavaScript---->
+                </div>
             </section>
 
             <!----Newsletter---->
@@ -102,12 +103,16 @@
                 <h2>Sign up for our Newsletter!</h2>
                 <!----Newsletter Form---->
                 <form>
-                    <label>Name</label>
+
+                    <label for="my-name">Name<span class="required">*</span></label>
+                    <span class="message"></span>
                     <input type="text" name="my-name" id="my-name" required>
-                    <label>Email</label>
-                    <input type="text" name="my-inbox" id="my-inbox" required>
-                    <label>Software</label>
-                    <select name="my-sw" id="my-sw">
+                    <label for="my-inbox">Email<span class="required">*</span></label>
+                    <span class="message"></span>
+                    <input type="email" name="my-inbox" id="my-inbox" required>
+                    <label for="my-sw">Software<span class="required">*</span></label>
+                    <span class="message"></span>
+                    <select name="my-sw" id="my-sw" required>
                         <option value="">Choose Software</option>
                         <option value="V2">V2</option>
                         <option value="AP">Append</option>
@@ -123,6 +128,8 @@
 
                     <input type="submit" name="my-submit" id="my-submit" value="Submit Form">
                 </form>
+
+                <p class="message" id="displayUser"></p>
             </section>
 
             <!----Frequently Asked Questions---->
