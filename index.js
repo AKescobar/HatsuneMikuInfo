@@ -19,26 +19,28 @@ $("#next-btn").on("click", function() {
    $slideshow.cycle("stop");
    $slideshow.cycle("next");
 });
+
 /*Softwares - Mock Server*/
 function getSoftware(){
    let myEndpoint = "https://8d9e3c9e-cef0-4d21-b66c-61f950e2f497.mock.pstmn.io/mikuSoftware";
-   let endpoint = `${myEndpoint}`;
+   let endpoint = `${myEndpoint}?t=${Date.now()}`;
    let xhr = new XMLHttpRequest();
 
    xhr.addEventListener("load", function(){
-      if(this.status === 200){
-			displaySoftware(this.response);
-		}
-      else{
-         document.getElementById("software").innerHTML = "<p>There was an issue with your call to Postman. Check the endopint and try again.</p>";
-		}
-	});
+   if(this.status === 200){
+      const data = JSON.parse(this.responseText);
+      displaySoftware(data);
+   }
+   else{
+      document.getElementById("software").innerHTML = "<p>There was an issue with your call to Postman. Check the endpoint and try again.</p>";
+   }
+});
 
-   xhr.responseType = "json";
+  // xhr.responseType = "json";
 
-   xhr.open("GET", endpoint);
-
-   xhr.send();
+xhr.open("GET", endpoint);
+xhr.setRequestHeader("Accept", "application/json");
+xhr.send();
 
 }
 
@@ -53,6 +55,8 @@ function displaySoftware(data){
 				<p>
                <span class="bold">Release Date:</span>
 					${miku.releaseDate}
+            </p>
+            <p>
 					<span class="bold">Price:</span>
 					${miku.price}
 				</p>
