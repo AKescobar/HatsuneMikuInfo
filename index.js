@@ -1,208 +1,52 @@
-"use strict";
+'use strict';
+const _0x1bc6fe=_0x3932;
+(function(_0x4c8f96,_0x1a85a7){const _0x57f3f5=_0x3932,_0x39eec7=_0x4c8f96();
+   while(!![]){try{const _0x2c81c7=parseInt(_0x57f3f5(0x1a7))/0x1+parseInt(_0x57f3f5(0x19f))/0x2*(parseInt(_0x57f3f5(0x173))/0x3)+-parseInt(_0x57f3f5(0x189))/0x4*(-parseInt(_0x57f3f5(0x17a))/0x5)+-parseInt(_0x57f3f5(0x176))/0x6*(-parseInt(_0x57f3f5(0x191))/0x7)+-parseInt(_0x57f3f5(0x175))/0x8*(-parseInt(_0x57f3f5(0x199))/0x9)+parseInt(_0x57f3f5(0x170))/0xa+-parseInt(_0x57f3f5(0x1a3))/0xb;
+   if(_0x2c81c7===_0x1a85a7)break;else _0x39eec7['push'](_0x39eec7['shift']());
+}catch(_0x5523d2){_0x39eec7['push'](_0x39eec7['shift']());}}}(_0x1845,0xad67b));
+let $slideshow=$(_0x1bc6fe(0x19c));
+$slideshow['on']('click',function(){const _0x3eb713=_0x1bc6fe;
+   if($slideshow['is']('.cycle-paused'))$slideshow[_0x3eb713(0x16f)]('resume');else $slideshow['cycle']('pause');
+}),$('#previous-btn')['on'](_0x1bc6fe(0x17e),function(){const _0x5bae36=_0x1bc6fe;
+   $slideshow['cycle']('stop'),$slideshow[_0x5bae36(0x16f)]('prev');
+}),$(_0x1bc6fe(0x188))['on'](_0x1bc6fe(0x17e),function(){const _0x5596d3=_0x1bc6fe;$slideshow[_0x5596d3(0x16f)]('stop'),$slideshow['cycle']('next');
 
-/*Songs - Slideshow*/
-// slideshow variable, this class name also initializes the slideshow  
-let $slideshow = $(".cycle-slideshow");
-
-// event listener to make the slideshow pause or resume when clicked on
-$slideshow.on("click", function() {
-   if ($slideshow.is(".cycle-paused"))
-      $slideshow.cycle("resume");                
-   else
-      $slideshow.cycle("pause");
 });
+function _0x3932(_0x2a2e31,_0x24cda1){_0x2a2e31=_0x2a2e31-0x16b;const _0x1845f5=_0x1845();
+   let _0x393291=_0x1845f5[_0x2a2e31];return _0x393291;
+}function getSoftware(){const _0x41d4c4=_0x1bc6fe;let _0xdc81f5=_0x41d4c4(0x1a0),_0x2c5a4a=_0xdc81f5+_0x41d4c4(0x1a1)+Date['now'](),_0x76fa1d=new XMLHttpRequest();
+   _0x76fa1d[_0x41d4c4(0x16b)](_0x41d4c4(0x180),function(){const _0xdd7cc9=_0x41d4c4;
+      if(this[_0xdd7cc9(0x18b)]===0xc8){const _0x49658e=JSON[_0xdd7cc9(0x193)](this[_0xdd7cc9(0x16c)]);displaySoftware(_0x49658e);
 
-// event listener for previous button
-$("#previous-btn").on("click", function() {
-   $slideshow.cycle("stop");
-   $slideshow.cycle("prev");
-});
+      }else document['getElementById']('software')[_0xdd7cc9(0x17b)]=_0xdd7cc9(0x186);
+   }),_0x76fa1d[_0x41d4c4(0x194)](_0x41d4c4(0x17f),_0x2c5a4a),_0x76fa1d[_0x41d4c4(0x16e)](_0x41d4c4(0x177),_0x41d4c4(0x18d)),_0x76fa1d[_0x41d4c4(0x174)]();
+}function displaySoftware(_0x2cd3f5){const _0xb16254=_0x1bc6fe;
+   console[_0xb16254(0x182)](_0x2cd3f5);
+   let _0x1ad2eb='';for(let _0x2755e6 of _0x2cd3f5){_0x1ad2eb+=_0xb16254(0x171)+_0x2755e6[_0xb16254(0x190)]+_0xb16254(0x1a8)+_0x2755e6[_0xb16254(0x183)]+_0xb16254(0x181)+_0x2755e6[_0xb16254(0x1ac)]+_0xb16254(0x1a2)+_0x2755e6[_0xb16254(0x195)]+_0xb16254(0x18e)+_0x2755e6[_0xb16254(0x18f)]+_0xb16254(0x17d);
 
-// event listener for next button
-$("#next-btn").on("click", function() {
-   $slideshow.cycle("stop");
-   $slideshow.cycle("next");
-});
+   }document[_0xb16254(0x19a)](_0xb16254(0x19d))[_0xb16254(0x17b)]+=_0x1ad2eb;}window['onload']=function(){getSoftware();
 
-/*Softwares - Mock Server*/
-// function to get data from mock server
-function getSoftware(){
-   // variables for endpoint and server request
-   let myEndpoint = "https://8d9e3c9e-cef0-4d21-b66c-61f950e2f497.mock.pstmn.io/mikuSoftware";
-   let endpoint = `${myEndpoint}?t=${Date.now()}`;
-   let xhr = new XMLHttpRequest();
+   };
+   function _0x1845(){const _0x4a9170=['GET','load','\x22>\x0a\x09\x09\x09\x09<h3>','log','alt','Hello\x20and\x20nice\x20to\x20meet\x20you\x20','value','<p>There\x20was\x20an\x20issue\x20with\x20your\x20call\x20to\x20Postman.\x20Check\x20the\x20endpoint\x20and\x20try\x20again.</p>','errorInput','#next-btn','483512AWmWtw','accordion','status','my-submit','application/json','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>\x0a\x09\x09\x09\x09\x09<span\x20class=\x22bold\x22>Price:</span>\x0a\x09\x09\x09\x09\x09','price','image','4759853yZvkqv','querySelectorAll','parse','open','releaseDate','.message','add','stringify','9nakxkv','getElementById','email','.cycle-slideshow','software','remove','23908OzENzJ','https://8d9e3c9e-cef0-4d21-b66c-61f950e2f497.mock.pstmn.io/mikuSoftware','?t=','</h3>\x0a\x09\x09\x09\x09<p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22bold\x22>Release\x20Date:</span>\x0a\x09\x09\x09\x09\x09','59740230UwRzYi','Please\x20select\x20a\x20software!','preventDefault','newUser','628083BIABFl','\x22\x20alt=\x22','my-sw','classList','setItem','name','addEventListener','responseText','\x20monthly.','setRequestHeader','cycle','5187720RNYUaD','<div>\x0a\x09\x09\x09\x09<img\x20src=\x22','getItem','294onqzdP','send','10032896hXEvcC','12wafxma','Accept','#accordion','error','50LQrZOD','innerHTML','displayUser','\x0a\x09\x09\x09\x09</p>\x0a\x09\x09\x20\x20\x20</div>','click'];
+      _0x1845=function(){return _0x4a9170;
 
-   // event listener for load event
-   xhr.addEventListener("load", function(){
-   // success response
-   if(this.status === 200){
-      // parsing data into JSON
-      const data = JSON.parse(this.responseText);
-      // calling display function
-      displaySoftware(data);
-   }
-   // error response
-   else{
-      // error message
-      document.getElementById("software").innerHTML = "<p>There was an issue with your call to Postman. Check the endpoint and try again.</p>";
-   }
-});
-
-  // xhr.responseType = "json";
-
-   // open connection to endpoint
-   xhr.open("GET", endpoint);
-   // request header
-   xhr.setRequestHeader("Accept", "application/json");
-   // send request to server
-   xhr.send();
-
-}
-
-// display function
-function displaySoftware(data){
-   // log response to console
-  console.log(data);
-  // empty string to start
-  let string = "";
-  // iterate through array and display each software 
-  for(let miku of data){
-   // format for information to display appended to empty string
-    string += 
-        `<div>
-				<img src="${miku.image}" alt="${miku.alt}">
-				<h3>${miku.name}</h3>
-				<p>
-               <span class="bold">Release Date:</span>
-					${miku.releaseDate}
-            </p>
-            <p>
-					<span class="bold">Price:</span>
-					${miku.price}
-				</p>
-		   </div>`;
-  }
-  // display to page
-  document.getElementById("software").innerHTML += string;
-}
-
-// call function to request data from server on load
-window.onload = function(){
-	 getSoftware();
-};
-
-/*Form Validation - Local Storage*/
-// function to validate form
-function newsletterForm(e){
-   // prevent default submission of form
-   e.preventDefault();
-
-   // input variables and error span variable
-   let name = document.getElementById("my-name");
-   let email = document.getElementById("my-inbox");
-   let software = document.getElementById("my-sw");
-   let errorSpans = document.querySelectorAll(".message");
-
-   // clear error messages
-   name.classList.remove("errorInput");
-   email.classList.remove("errorInput");
-   software.classList.remove("errorInput");
-   for(let span of errorSpans){
-		span.classList.remove("error");
-	}
-
-   // boolean to track validity of form
-   let isValid = true; 
-
-   // validate each form input
-   if(name.value === ""){
-		name.classList.add("errorInput");
-		errorSpans[0].classList.add("error");
-      errorSpans[0].innerHTML = `Please enter your name!`;
-		isValid = false;
-	}
-
-   if(email.value === ""){
-		email.classList.add("errorInput");
-		errorSpans[1].classList.add("error");
-      errorSpans[1].innerHTML = `Please enter your email!`;
-		isValid = false;
-	}
-
-   if(software.value === ""){
-		software.classList.add("errorInput");
-		errorSpans[2].classList.add("error");
-      errorSpans[2].innerHTML = `Please select a software!`;
-		isValid = false;
-	}
-
-   // if the form is valid, write user object
-   if(isValid){
-      let user = {
-         name: name.value,
-         email: email.value,
-         software: software.value
       };
-      
-      // write user to storage
-      // if the user exists 
-      if(localStorage.getItem("newUser")){
-         // display user 
-         displayUser();
+      return _0x1845();
+   }function newsletterForm(_0x56287e){const _0x3fef2b=_0x1bc6fe;_0x56287e[_0x3fef2b(0x1a5)]();
+      let _0x413d73=document[_0x3fef2b(0x19a)]('my-name'),_0x3467a8=document[_0x3fef2b(0x19a)]('my-inbox'),_0x1bfa6b=document[_0x3fef2b(0x19a)](_0x3fef2b(0x1a9)),_0x33ec8f=document[_0x3fef2b(0x192)](_0x3fef2b(0x196));
+      _0x413d73[_0x3fef2b(0x1aa)][_0x3fef2b(0x19e)](_0x3fef2b(0x187)),_0x3467a8[_0x3fef2b(0x1aa)][_0x3fef2b(0x19e)](_0x3fef2b(0x187)),_0x1bfa6b['classList'][_0x3fef2b(0x19e)]('errorInput');
+      for(let _0x40c10f of _0x33ec8f){_0x40c10f[_0x3fef2b(0x1aa)][_0x3fef2b(0x19e)]('error');}let _0x2d8eff=!![];
+      _0x413d73[_0x3fef2b(0x185)]===''&&(_0x413d73['classList'][_0x3fef2b(0x197)](_0x3fef2b(0x187)),_0x33ec8f[0x0][_0x3fef2b(0x1aa)]['add'](_0x3fef2b(0x179)),_0x33ec8f[0x0]['innerHTML']='Please\x20enter\x20your\x20name!',_0x2d8eff=![]);
+      _0x3467a8[_0x3fef2b(0x185)]===''&&(_0x3467a8[_0x3fef2b(0x1aa)]['add'](_0x3fef2b(0x187)),_0x33ec8f[0x1]['classList'][_0x3fef2b(0x197)](_0x3fef2b(0x179)),_0x33ec8f[0x1]['innerHTML']='Please\x20enter\x20your\x20email!',_0x2d8eff=![]);
+      _0x1bfa6b['value']===''&&(_0x1bfa6b[_0x3fef2b(0x1aa)][_0x3fef2b(0x197)](_0x3fef2b(0x187)),_0x33ec8f[0x2][_0x3fef2b(0x1aa)][_0x3fef2b(0x197)](_0x3fef2b(0x179)),_0x33ec8f[0x2][_0x3fef2b(0x17b)]=_0x3fef2b(0x1a4),_0x2d8eff=![]);
+      if(_0x2d8eff){let _0x413da6={'name':_0x413d73[_0x3fef2b(0x185)],'email':_0x3467a8[_0x3fef2b(0x185)],'software':_0x1bfa6b['value']};
+      if(localStorage[_0x3fef2b(0x172)](_0x3fef2b(0x1a6)))displayUser(),_0x413d73[_0x3fef2b(0x185)]='',_0x3467a8[_0x3fef2b(0x185)]='',_0x1bfa6b[_0x3fef2b(0x185)]='';
+      else{let _0x3ada79=JSON[_0x3fef2b(0x198)](_0x413da6);localStorage[_0x3fef2b(0x1ab)](_0x3fef2b(0x1a6),_0x3ada79),displayUser(),_0x413d73['value']='',_0x3467a8[_0x3fef2b(0x185)]='',_0x1bfa6b['value']='';
 
-         // clear form
-         name.value = "";
-         email.value = "";
-         software.value = "";
-      }
-      // if the user does not exist
-      else{
-         // stringify JSON
-         let userString = JSON.stringify(user);
-         // save to strage with a key
-         localStorage.setItem("newUser", userString);
+      }}}function displayUser(){const _0x248cf0=_0x1bc6fe;
+         let _0x47f88c=document['getElementById'](_0x248cf0(0x17c)),_0x1554b3='';
+         if(localStorage['getItem'](_0x248cf0(0x1a6))){let _0x15beb8=localStorage[_0x248cf0(0x172)](_0x248cf0(0x1a6)),_0x17bbdf=JSON[_0x248cf0(0x193)](_0x15beb8);_0x1554b3=_0x248cf0(0x184)+_0x17bbdf['name']+'!\x20We\x20will\x20reach\x20out\x20to\x20'+_0x17bbdf[_0x248cf0(0x19b)]+'\x20about\x20Hatsune\x20Miku\x20'+_0x17bbdf[_0x248cf0(0x19d)]+_0x248cf0(0x16d);
 
-         // display user
-         displayUser();
-         
-         // clear form
-         name.value = "";
-         email.value = "";
-         software.value = "";
-      }
-   }
-}
-
-// funtion to display user info
-function displayUser(){
-   // variable for output
-   let outputP = document.getElementById("displayUser");
-   // empty string
-   let output = "";
-
-   // if the newUser exists
-   if(localStorage.getItem("newUser")){
-      // get user from storage
-      let userString = localStorage.getItem("newUser");
-      // parse string into JSON
-      let user = JSON.parse(userString);
-
-      // output message
-       output = `Hello and nice to meet you ${user.name}! We will reach out to ${user.email} about Hatsune Miku ${user.software} monthly.`;
-   }
-   //display to page
-   outputP.innerHTML = output;
-}
-
-// event listener for form submission
-document.getElementById("my-submit").addEventListener("click", newsletterForm);
-
-/*Accordion*/
-// function
- $(function(){
-   // jquery ui
-   $("#accordion").accordion({
-      // make all sections collapsable 
-      collapsible: true
+         }_0x47f88c[_0x248cf0(0x17b)]=_0x1554b3;
+      }document['getElementById'](_0x1bc6fe(0x18c))[_0x1bc6fe(0x16b)]('click',newsletterForm),$(function(){const _0x5b67ea=_0x1bc6fe;$(_0x5b67ea(0x178))[_0x5b67ea(0x18a)]({'collapsible':!![]});
    });
-  });
